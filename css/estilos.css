@@ -126,3 +126,42 @@ cursor: pointer;
 .botonMain:hover {background-color: #e00000;
 border: #e00000;
 transition: .3s ease-in-out;}
+
+
+/* PEDIDOS.HTML */
+
+.contenedorImagen {background-image: url(../imagenes/imgtacos.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20vh 2vw;
+
+display: flex;
+align-items: flex-end;}
+
+.ContenedorTituloPedidos {background-color: #ffffff;
+color: #e00000;
+
+margin-top: 3em;
+padding: 1em;
+
+text-align: left;
+width:40%;
+
+}
+
+#tituloPedidos {font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+
+    margin-bottom: 0.5em;
+}
+
+#parrafoPedidos{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+font-size: 1.5em;
+color: black;}
