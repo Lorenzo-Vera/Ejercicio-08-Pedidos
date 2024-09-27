@@ -1,0 +1,128 @@
+/* TIPOGRAFIA 
+-Cursiva : sansita-swashed del 300 al 900
+-Imprenta : Oswald del 200 al 700*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sansita+Swashed:wght@300..900&display=swap');
+
+*{margin: 0; padding: 0;}
+
+/* HEADER */
+
+
+.barra-nav{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 50px;
+
+    color: #e00000;
+    background-color: #ffffff;}
+
+#tituloHeaderUno {
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+
+    display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.anclaInicio {    color: #e00000;
+    text-decoration: none;}
+
+#tituloHeaderDos {  font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+font-size: 0.3em;}
+
+.contenedorLogo {display: flex;
+align-items: left;
+cursor: pointer;
+}
+
+
+#Menu {display: flex;
+flex-direction: row;
+
+font-family: "Oswald", system-ui;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-size: 1.5em;
+}
+
+.navegador:hover {color: #650B0B;}
+
+.navegador {margin: 3vh;
+    list-style: none;
+    cursor: pointer;
+    color: #e00000;
+text-decoration: none;
+    }
+
+
+
+
+/* MAIN */
+
+.contenedorCentral {display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#f9fccc;
+
+    background: linear-gradient(to bottom, rgba(0 0 0/ .5), rgba(0 0 0/ .25)), url(../imagenes/imagenHome.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+
+.tituloMainUno {font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+font-size: 9em;
+
+margin-top: 1em;}
+
+.tituloMainDos {font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+font-size: 2.5em;
+margin: 0.5em 1em;}
+
+
+.contendorTituloDos {display: flex;
+flex-direction: row;}
+
+.botonMain{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+
+color: #f9fccc;
+background-color: transparent;
+
+border: 3px solid;
+border-radius: 40px;
+padding: 10px 50px;
+margin: 0 10px;
+
+text-align: center;
+
+margin-bottom: 5em;
+
+cursor: pointer;
+}
+
+.botonMain:hover {background-color: #e00000;
+border: #e00000;
+transition: .3s ease-in-out;}
