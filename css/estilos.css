@@ -130,11 +130,11 @@ transition: .3s ease-in-out;}
 
 /* PEDIDOS.HTML */
 
-.contenedorImagen {background-image: url(../imagenes/imgtacos.jpg);
+.contenedorImagen {background-image: url(../imagenes/tacos1.png);
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
-padding: 20vh 2vw;
+padding: 15vh 2vw; 
 
 display: flex;
 align-items: flex-end;}
@@ -165,3 +165,50 @@ width:40%;
     font-style: normal;
 font-size: 1.5em;
 color: black;}
+
+#main {margin: 20px 30px;}
+
+.subtituloMenu{font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+
+color: #e00000;
+
+}
+
+hr{ 
+    border: 1px solid #e00000;
+    margin: 20px 0;
+}
+
+.tipoDeProducto{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+    color: #e00000;}
+
+.contenedores{display: flex;
+flex-wrap: wrap;}
+
+.contenedorProducto{ width: 28%; 
+background-color: #f9fccc;
+margin: 15px;
+padding: 10px;}
+
+.contenedorProducto:hover {background-color: #eee8f0
+    ;}
+
+.nombreProducto, .descripcionProducto, .precio{font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+color: black;}
+
+.nombreProducto{font-size: 1.5em;}
+.precio{font-weight: 400;
+padding-top: 15px;}
+.descripcionProducto{margin: 15px 0;}
