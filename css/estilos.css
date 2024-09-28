@@ -55,9 +55,9 @@ font-style: normal;
 font-size: 1.5em;
 }
 
-.navegador:hover {color: #650B0B;}
+.navegador, .icon-cart:hover {color: #650B0B;}
 
-.navegador {margin: 3vh;
+.navegador, .icon-cart {margin: 3vh;
     list-style: none;
     cursor: pointer;
     color: #e00000;
