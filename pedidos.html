@@ -23,11 +23,26 @@
     
             </a>
     
-            <nav>
+            <nav id="carrito">
                 <ul id="Menu">
                     <li class="navegador"><a href="menu.html" class="navegador">Menú</a></li>
                     <li class="navegador"><a href="pedidos.html" class="navegador">Pedir Online</a></li>
-                    <li><a href="carrito.html" class="icon-cart" ><span id="cuentaCarrito">0</span></a></li>
+                    <li class="icon-cart" id="carrito">
+                        <span id="cuentaCarrito">0</span> 
+                        <div class="buy-card">
+                            <ul class="nav-card">
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Cantidad</li>
+                                <li></li>
+                            </ul>
+                            <div class="listaDeProductos">
+
+                            </div>
+                            
+                            <button id="botonCarrito">Ordenar</button>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,28 +67,28 @@
                     <h4 class="nombreProducto">Nachos Caseros</h4>
                     <p class="descripcionProducto">Hojuelas de maiz con salsa guacamole y queso chedar</p>
                     <p class="precio"> $90</p>
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="1">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
                     <h4 class="nombreProducto">Maiz asado Mexicano</h4>
                     <p class="descripcionProducto">Maiz pelado y asado sobre parrilla</p>
                     <p class="precio">$50</p>
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="2">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
                     <h4 class="nombreProducto">Ensalada de fajitas</h4>
                     <p class="descripcionProducto">Fajitas de pollo con ensalada</p>
                     <p class="precio">$60</p>
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="3">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
                     <h4 class="nombreProducto">Mini Quesadillas</h4>
                     <p class="descripcionProducto">Tortilla de maiz rellena de queso</p>
                     <p class="precio">$90</p>
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="4">pedir</button>
                 </div>
             </div>
 
@@ -86,7 +101,7 @@
                     <p class="descripcionProducto">Dos tortillas de maiz rellena de pollo, pimiento y cebolla</p>
                     <p class="precio">$120</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="5">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -94,7 +109,7 @@
                     <p class="descripcionProducto">Dos tortillas de maiz rellena de pezcado frito</p>
                     <p class="precio">$120</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="6">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -102,7 +117,7 @@
                     <p class="descripcionProducto">Dos tortillas de maiz rellenas de cerdo,marinado en salsa de chile</p>
                     <p class="precio">$150</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="7">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -110,7 +125,7 @@
                     <p class="descripcionProducto">Dos tortillas de maiz rellena de queso y mix de vegetales</p>
                     <p class="precio">$100</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="8">pedir</button>
                 </div>
             </div>
 
@@ -125,7 +140,7 @@
 
                     <p class="precio">$10</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="9">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -133,7 +148,7 @@
                     
                     <p class="precio">$12</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="10">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -141,7 +156,7 @@
                     
                     <p class="precio">$15</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="11">pedir</button>
                 </div>
 
                 <div class="contenedorProducto">
@@ -149,11 +164,11 @@
                     
                     <p class="precio">$20</p>
 
-                    <button>pedir</button>
+                    <button class="agregarCarrito" data-id="12">pedir</button>
                 </div>
             </div>
         </main>
 
-<script src="./js/localstor.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

@@ -223,3 +223,127 @@ color: black;}
 .precio{font-weight: 400;
 padding-top: 15px;}
 .descripcionProducto{margin: 15px 0;}
+
+.agregarCarrito{
+    font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+
+color: #e00000;
+background-color: transparent;
+
+border: 3px solid;
+border-radius: 40px;
+padding: 5px 30px;
+margin: 0 10px;
+
+text-align: center;
+cursor: pointer;
+}
+.agregarCarrito:hover {
+    background-color: #e00000;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+.agregarCarrito:active{
+    transform: scale(.9);
+}
+
+/* CARRITO */
+
+.nav-card {display: none;}
+#Menu .icon-cart .buy-card button {display: none;}
+
+.barra-nav nav #Menu .icon-cart:hover > .buy-card {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    overflow: auto;
+    overflow-x: auto;
+}
+
+.barra-nav nav #Menu .icon-cart:hover .nav-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 1rem;
+    border-bottom: solid 1px #e00000;
+
+
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    }
+
+.nav-card li { font-weight: bold;}
+
+.barra-nav nav #Menu .icon-cart:hover .buy-card > button {display: block;
+width: 90%;
+padding: 1rem;
+margin: 10px auto;
+background-color: transparent;
+color: #e00000;
+border: solid 2px #e00000;
+border-radius: 10px;
+cursor: pointer;
+
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;}
+
+.barra-nav nav #Menu .icon-cart:hover .buy-card > button:hover {
+color: #ffffff;
+background-color: #e00000;
+border: #e00000;
+transition: .3s ease-in-out;
+}
+
+/* Elementos del carrito */
+
+.listaDeProductos div{
+    display: none;
+}
+.barra-nav nav #Menu .icon-cart:hover .buy-card > .listaDeProductos div {
+    display: flex;
+    text-align: center;
+    padding: 5px 20px ;
+    border-top: solid 2px #e00000;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaDeProductos p {
+margin: 10px;
+width: 300px;
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+
+
+}
+
+.listaDeProductos p:nth-child(2) {
+    margin-left: 30px;
+}
+
+.listaDeProductos p:nth-child(3) {margin-left: 40px;}
+
+.listaDeProductos p:last-child {
+
+text-align: center;
+padding: 10px 10px;
+font-weight: bold;
+} 
