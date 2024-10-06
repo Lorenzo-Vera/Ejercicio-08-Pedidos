@@ -9,26 +9,57 @@
     <link rel="stylesheet" href="./css/formulario.css">
 </head>
 <body>
+    <main>
+        
+        <form action="pedido-online">
+            <fieldset>
+                <legend>DATOS DEL ENVIO</legend>
 
-<div class="container">
-    <h1>Ordenar Comida</h1>
-    <form action="submit_form.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+                <label for="nombre">Nombre*:</label> <br>
+                <input title="nombre" type="text" required><br>
 
-        <label for="email">Dirrecion:</label>
-        <input type="email" id="email" name="email" required>
+                <label for="direccion">Dirección*:</label> <br>
+                <input type="text" title="direccion" required><br>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+                <label for="entre-calles">Entre Calles:</label> <br>
+                <input type="text" title="entre-calles">
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tus preferencias o comentarios"></textarea>
+                <label for="telefono">Telefono*:</label> <br>
+                <input type="tel" title="telefono" required><br>
 
-        <button type="submit">
-            <i class="fas fa-shopping-cart icon"></i> Ordenar
-        </button>
-    </form>
-</div>
+                <label for="correo">Email:</label><br>
+                <input type="email"  title="correo" placeholder="Ej: mail@gmail.com"> <br>
+
+                <div class="datosPedido"></div>
+
+                <button class="enviar">ENVIAR</button>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const datosPedido = document.querySelector(".datosPedido");
+    const productosCarrito = JSON.parse(localStorage.getItem("pedido")) || [];
+
+    if (productosCarrito.length > 0) {
+        productosCarrito.forEach(producto => {
+            const item = document.createElement("p");
+            item.textContent = `${producto.cantidad} x ${producto.nombre} - $${producto.precio}`;
+            datosPedido.appendChild(item);
+        });
+
+
+        const total = productosCarrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
+        const totalElement = document.createElement("p");
+        totalElement.textContent = `Total: $${total}`;
+        datosPedido.appendChild(totalElement);
+    } else {
+        datosPedido.textContent = "No hay productos en el carrito.";
+    }
+});
+
+    </script>
 </body>
 </html>
