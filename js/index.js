@@ -37,6 +37,8 @@ function Eventos () {
             productosCarrito = JSON.parse(localStorage.getItem("pedido")) || [];
             agregarCarrito() 
         })
+
+    botonCarrito.addEventListener("click", finalizarCompra)
     }
     
 //Elimina producto
@@ -132,7 +134,14 @@ function borrarDuplicado() {
     }
 };
 
+//FORMULARIO
 
+function finalizarCompra(event) {
 
+    event.preventDefault(); 
+    window.location.href = "formulario.html";
+
+    guardarLocalStorage()
+}
 
 
