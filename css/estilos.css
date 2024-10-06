@@ -286,15 +286,18 @@ cursor: pointer;
 
 .nav-card li { font-weight: bold;}
 
-.barra-nav nav #Menu .icon-cart:hover .buy-card > button {display: block;
+#botonCarrito{text-decoration: none;}
+
+.barra-nav nav #Menu .icon-cart:hover .buy-card #botonCarrito >  button  {display: block;
 width: 90%;
 padding: 1rem;
 margin: 10px auto;
 background-color: transparent;
 color: #e00000;
-border: solid 2px #e00000;
+border: solid 2px #e00000;  
 border-radius: 10px;
 cursor: pointer;
+
 
 
 font-family: "Oswald", system-ui;
@@ -303,7 +306,7 @@ font-family: "Oswald", system-ui;
     font-style: normal;
     font-size: 1.5rem;}
 
-.barra-nav nav #Menu .icon-cart:hover .buy-card > button:hover {
+.barra-nav nav #Menu .icon-cart:hover .buy-card #botonCarrito>  button:hover {
 color: #ffffff;
 background-color: #e00000;
 border: #e00000;
