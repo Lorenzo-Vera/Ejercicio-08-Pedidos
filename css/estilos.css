@@ -355,18 +355,17 @@ text-align: center;
 padding: 10px 10px;
 font-weight: bold;
 }
-.pie {
+
+/* footer */
+.pie2 {
     background-color: #E10000;
-    padding: 1em 0;
+    padding: 0.5em 0;
     text-align: center;
     font-size: 16px; 
-    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 1%;
     color: #FAAB98;
-    display: inline-block;
-    margin-bottom: 30px;
+
 }
 
 @font-face {
@@ -380,7 +379,7 @@ font-weight: bold;
     font-family: 'open-sans.regular';
     font-size: 40px;
 }
-
+/* menu */
 .container {
     display: flex;
     height: 100vh;
@@ -393,210 +392,44 @@ font-weight: bold;
 
 }
 
-.colorido {
+.menu {
     background-color: #950000;
     width: 100%;
-    font-family: 'open-sans.regular'
+    font-family: 'open-sans.regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-img {
-    width: 60%;
-    height: 100%; 
-    margin-right: 20px;
+.producto{width: 80%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 20px 50px;
+
+font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;}
+
+.hrMenu{
+border: 2px solid #F6E2DD;
+width: 50%;
 }
 
-/* Edicion y tamaño del text */
-
-.Text {
-    font-size: 30px;
-    position: absolute;
-    padding: 60px;
-    color: #F9E37E;
+#titulo{
+    margin-bottom: 30px;
 }
 
-.Text2 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 45px;
-    position: absolute;
-    color: #F6E2DD;
+.alinear{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.Text3 {
-    font-size: 20px;
-    padding: 60px;
-    margin-top: 200px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
+.tituloProducto{
+    color: #f3f99a;
+    font-size: 2em;
 }
-
-.Text4 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 234px;
-    position: absolute;
-    color: #F6E2DD;
-    transform: translateY(-80px);
-}
-
-.Text5 {
-    font-size: 20px;
-    padding: 60px;
-    margin-top: 310px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
-}
-
-.Text6 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 344px;
-    position: absolute;
-    color: #F6E2DD;
-    transform: translateY(-80px);
-}
-
-.Text7 {
-    font-size: 20px;
-    padding: 60px;
-    margin-top: 420px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
-}
-
-.Text8 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 455px;
-    position: absolute;
-    color: #F6E2DD;
-    transform: translateY(-80px);
-}
-
-.Text9 {
-    font-size: 20px;
-    padding: 60px;
-    margin-top: 530px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
-}
-
-.Text10 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 234px;
-    position: absolute;
-    color: #F6E2DD;
-    transform: translateY(248px);
-}
-
-.Text11 {
-    font-size: 25px;
-    padding: 60px;
-    margin-top: 740px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
-}
-
-.Text12 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 700px;
-    position: absolute;
-    color: #F6E2DD;
-}
-
-.Text13 {
-    font-size: 20px;
-    padding: 60px;
-    margin-top: 860px;
-    position: absolute;
-    color: #F9E37E;
-    transform: translateY(-80px);
-}
-
-.Text14 {
-    font-size: 12.5px;
-    padding: 60px;
-    margin-top: 815px;
-    position: absolute;
-    color: #F6E2DD;
-}
-
-
-
-.pie2 {
-    background-color: #E10000;
-    padding: 1em 0;
-    text-align: center;
-    font-size: 20px; 
-    bottom: 0;
-    width: 100%;
-    height: 1%;
-    color: #FAAB98;
-    display: inline-block;
-}
-
-#linea {
-    display: inline-block;
-    border-bottom: 3px solid #B1221E;
-    height: 2px;
-}
-
-#number {
-    color: #FFEBF4;
-    margin-left: 640px;
-    font-size: 30px;
-    padding: 60px;
-    margin-top: 234px;
-    position: absolute;
-    transform: translateY(-120px);
-}
-
-#number2 {
-    color: #FFEBF4;
-    margin-left: 640px;
-    font-size: 30px;
-    padding: 60px;
-    margin-top: 234px;
-    position: absolute;
-    transform: translateY(-10px);
-}
-
-#number3 {
-    color: #FFEBF4;
-    margin-left: 640px;
-    font-size: 30px;
-    padding: 60px;
-    margin-top: 234px;
-    position: absolute;
-    transform: translateY(100px);
-}
-
-#number4 {
-    color: #FFEBF4;
-    margin-left: 640px;
-    font-size: 30px;
-    padding: 60px;
-    margin-top: 345px;
-    position: absolute;
-    transform: translateY(100px);
-}
-
-#number5 {
-    color: #FFEBF4;
-    margin-left: 640px;
-    font-size: 30px;
-    padding: 60px;
-    margin-top: 680px;
-    position: absolute;
-    transform: translateY(100px);
-
-
-
-} 
